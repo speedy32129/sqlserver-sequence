@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "sqlite3"
-  spec.add_dependency "activerecord", "~> 4.2.0"
-  spec.add_dependency 'activerecord-sqlserver-adapter', '~> 4.2.0'
-  spec.add_dependency 'tiny_tds'
+  spec.add_development_dependency 'sqlite3', '~> 0'
+  spec.add_runtime_dependency 'activerecord', '~> 4.2', '>= 4.2.0'
+  spec.add_runtime_dependency 'activerecord-sqlserver-adapter', '~> 4.2', '>= 4.2.0'
+  spec.add_runtime_dependency 'tiny_tds', '~> 0'
 end
